@@ -276,6 +276,7 @@ describe("US-04 whack()", () => {
 
   it("should increment score when clicking on mole", async () => {
     const points = await page.evaluate(() => {
+      
       window.startGame();
       const mole = document.querySelectorAll(".mole")[0];
       mole.click();
