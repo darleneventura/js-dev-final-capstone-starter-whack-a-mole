@@ -18,7 +18,7 @@ describe("US-01: Basic Game Structure", () => {
     await page.goto(baseURL, { waitUntil: "load" });
   });
 
-  it("has a title e.g. <h1 id='title'>Whack-a-Mole!!</h1>", async () => {
+  it("has a title e.g. <h1 id='title'>Whack-a-Zombie!!</h1>", async () => {
     const title = await page.evaluate(() => {
       const title = document.querySelectorAll("#title");
       return title.length;
@@ -36,9 +36,9 @@ describe("US-01: Basic Game Structure", () => {
     expect(holes).toEqual(9);
   });
 
-  it("has 9 moles <div class='mole'>", async () => {
+  it("has 9 zombies <div class='zombie'>", async () => {
     const moles = await page.evaluate(() => {
-      const m = document.querySelectorAll(".mole");
+      const m = document.querySelectorAll(".zombie");
       return m.length;
      });
     expect(moles).not.toBeNull();
@@ -278,8 +278,8 @@ describe("US-04 whack()", () => {
     const points = await page.evaluate(() => {
       
       window.startGame();
-      const mole = document.querySelectorAll(".mole")[0];
-      mole.click();
+      const zombie = document.querySelectorAll(".zombie")[0];
+      zombie.click();
       const points = document.querySelector("#score").innerHTML;
       return points;
     });

@@ -70,7 +70,7 @@ h2 {
   pointer-events:none;
 }
 
-.mole {
+.zombie {
 /*background:url('./assets/zombie1.png') bottom center no-repeat;*/
   background: url('/assets/zombie1.png') bottom center no-repeat;
   background-size: 70%;
@@ -83,7 +83,7 @@ h2 {
   pointer-events:auto;
 }
 
-.hole.show .mole {
+.hole.show .zombie {
   top: 9;
 /*transform: scale(1.1);*/
 }

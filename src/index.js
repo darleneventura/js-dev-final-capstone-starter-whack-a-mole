@@ -1,5 +1,5 @@
 const holes = document.querySelectorAll('.hole');
-const moles = document.querySelectorAll('.mole');
+const zombies = document.querySelectorAll('.zombie');
 const startButton = document.querySelector('#start');
 // TODO: Add the missing query selectors:
 const score = document.querySelector('#score'); // Use querySelector() to get the score element
@@ -256,10 +256,10 @@ return points;
 * for an example on how to set event listeners using a for loop.
 */
 function setEventListeners(){
-  moles.forEach(
-    mole => mole.addEventListener('click', whack)
+  zombies.forEach(
+    zombie => zombie.addEventListener('click', whack)
   );
-  return moles;
+  return zombies;
 }
 setEventListeners();
 /**
@@ -314,7 +314,7 @@ window.startGame = startGame;
 window.gameOver = gameOver;
 window.showUp = showUp;
 window.holes = holes;
-window.moles = moles;
+window.zombies = zombies;
 window.showAndHide = showAndHide;
 window.points = points;
 window.updateScore = updateScore;
