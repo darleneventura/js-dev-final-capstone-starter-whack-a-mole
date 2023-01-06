@@ -19,6 +19,7 @@ let difficulty = "hard";
 function playAudio(audioObject) {
   audioObject.play();
 }
+//this is th audio loop
 
 function loopAudio(audioObject) {
   audioObject.loop = true;
