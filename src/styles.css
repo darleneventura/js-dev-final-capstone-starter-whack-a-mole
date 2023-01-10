@@ -45,7 +45,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  cursor: url('/assets/mallet.png'), pointer;
+  cursor: url('../assets/mallet.png'), pointer;
 }
 
 
@@ -72,7 +72,7 @@ h2 {
 
 .zombie {
 /*background:url('./assets/zombie1.png') bottom center no-repeat;*/
-  background: url('/assets/zombie1.png') bottom center no-repeat;
+  background: url('../assets/zombie1.png') bottom center no-repeat;
   background-size: 70%;
   position: absolute;
   top: 100%;
